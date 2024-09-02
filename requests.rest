@@ -1,1 +1,22 @@
+POST http://localhost:3500/api/users/
+Content-Type: application/json
+
+{
+    "username": "Venu",
+    "email": "venu@gmail.com",
+    "password": "123456"
+}
+
+###
 GET http://localhost:3500/api/users/
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NmQ1NWUzZjJlNjBkNmMyMzgwZTU5ZTgiLCJpYXQiOjE3MjUyNTk1MzEsImV4cCI6MTcyNzg1MTUzMX0.bVrhXXrADlRwY7K_VKKFIKveUO5Th2uKFSe6yhB3RWg
+
+
+###
+POST http://localhost:3500/api/users/auth
+Content-Type: application/json
+
+{
+    "email": "venu@gmail.com",
+    "password": "123456"
+}
